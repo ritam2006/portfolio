@@ -1,0 +1,117 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  --bg: #f9f9fb;
+  --fg: #1c1c1f;
+  --accent: #7c3aed;
+  --accent-hover: #6d28d9;
+  --accent-bg: #b998f9;
+  --accent-bg-hover: #cbb9ff;
+  --muted: #ececf0;
+  --border: #dcdce4;
+}
+  
+.dark {
+  --bg: #1a1625;
+  --fg: #f3f3f6;
+  --accent: #b998f9;
+  --accent-hover: #cbb9ff;
+  --accent-bg: #7c3aed;
+  --accent-bg-hover: #6d28d9;
+  --muted: #252030;
+  --border: #3e3b4f;
+}
+
+body {
+  background-color: var(--bg);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@layer base {
+  h1 {
+    @apply text-4xl xl:text-5xl 2xl:text-6xl font-bold
+  }
+
+  h2 {
+    @apply text-xl md:text-2xl xl:text-3xl
+  }
+
+  h3 {
+    @apply text-lg xl:text-xl
+  }
+}
+  
+@layer components {
+  .hoverable {
+    @apply cursor-pointer text-accent transition-colors duration-200 ease-in-out hover:text-accent-hover;
+  }
+
+  .group-hoverable {
+    @apply cursor-pointer text-accent transition-colors duration-200 ease-in-out group-hover:text-accent-hover;
+  }
+
+  .hoverable-div {
+    @apply cursor-pointer bg-accent-bg transition-colors duration-200 ease-in-out hover:bg-accent-bg-hover;
+  }
+
+  .fade-enter-active,
+  .fade-appear-active {
+    @apply transition-opacity duration-[800ms] ease-out;
+  }
+
+  .fade-enter-from,
+  .fade-appear-from {
+    @apply opacity-0;
+  }
+
+  .fade-enter-to,
+  .fade-enter-to {
+    @apply opacity-100;
+  }
+
+  .wrapper {
+    opacity: 0;
+    animation-duration: 0.6s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+  }
+  
+  .slide-in-left {
+    animation-name: slideInLeft;
+  }
+  
+  .slide-in-right {
+    animation-name: slideInRight;
+  }
+  
+  @keyframes slideInLeft {
+    from {
+      transform: translateX(-40px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInRight {
+    from {
+      transform: translateX(40px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+}

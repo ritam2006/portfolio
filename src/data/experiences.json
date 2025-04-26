@@ -1,0 +1,34 @@
+[
+  {
+    "title": "Software Engineer Intern",
+    "company": "SomeIdea AI",
+    "startDate": "Mar 2025",
+    "endDate": "Present",
+    "description": "Currently working on a tool to streamline the process of writing financial reports. Comitted to making financial reports easier to understand for all.",
+    "imgFile": "siai.jpg"
+  },
+  {
+    "title": "Technical Consultant",
+    "company": "Piedmont Consulting Group",
+    "startDate": "Jan 2025",
+    "endDate": "Present",
+    "description": "Consulting for AI startups. Recently finished developing memory layers and entity extraction pipelines for Balnce AI.",
+    "imgFile": "pcg.jpg"
+  },
+  {
+    "title": "Frontend Developer Intern",
+    "company": "UpUnikSelf",
+    "startDate": "Jan 2025",
+    "endDate": "Mar 2025",
+    "description": "Created interactive components and layouts using React.js with Next.js. Optimized page loading speed and API calls through dynamic rendering and efficient data querying.",
+    "imgFile": "upunikself.jpg"
+  },
+  {
+    "title": "Simulations Team Member",
+    "company": "Space Enterprise at Berkeley",
+    "startDate": "Sep 2024",
+    "endDate": "Dec 2024",
+    "description": "Enhanced wind speed sampling technique for rocket launch simulations. Helped develop a Data Analysis GUI for real-time data analysis during launches.",
+    "imgFile": "seb.jpg"
+  }
+]

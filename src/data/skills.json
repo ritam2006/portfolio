@@ -1,0 +1,126 @@
+{
+  "Languages": [
+    {
+      "name": "Python",
+      "icon_name": "python-plain",
+      "description": "My go-to for ML pipelines, quick scripts, and data exploration."
+    },
+    {
+      "name": "JavaScript",
+      "icon_name": "javascript-plain",
+      "description": "The core of my interactive web interfaces and fullstack apps."
+    },
+    {
+      "name": "TypeScript",
+      "icon_name": "typescript-plain",
+      "description": "Makes my JavaScript a lot more manageable."
+    },
+    {
+      "name": "SQL",
+      "icon_name": "azuresqldatabase-plain",
+      "description": "How I communicate with and extract data from relational databases."
+    },
+    {
+      "name": "HTML",
+      "icon_name": "html5-plain",
+      "description": "The structural layer behind every site I've built."
+    },
+    {
+      "name": "CSS",
+      "icon_name": "css3-plain",
+      "description": "What I use to style everything from landing pages to dashboards."
+    },
+    {
+      "name": "Dart",
+      "icon_name": "dart-plain",
+      "description": "Played with it when I experimented with Flutter apps."
+    },
+    {
+      "name": "Java",
+      "icon_name": "java-plain",
+      "description": "Applied it through CS courses and algorithm practice."
+    }
+  ],
+
+  "Frontend": [
+    {
+      "name": "React",
+      "icon_name": "react-original",
+      "description": "What I used to build responsive UIs using component-driven patterns."
+    },
+    {
+      "name": "Next.js",
+      "icon_name": "nextjs-plain",
+      "description": "My favorite for building dynamic, fullstack web apps fast."
+    },
+    {
+      "name": "Vue.js",
+      "icon_name": "vuejs-plain",
+      "description": "Currently exploring it to get a feel for different frontend paradigms."
+    },
+    {
+      "name": "Tailwind CSS",
+      "icon_name": "tailwindcss-original",
+      "description": "Makes CSS less painful 😭."
+    }
+  ],
+
+  "Backend": [
+    {
+      "name": "Flask",
+      "icon_name": "flask-original",
+      "description": "Used it to deploy ML models and prototype APIs."
+    },
+    {
+      "name": "FastAPI",
+      "icon_name": "fastapi-plain",
+      "description": "Spun up performant, async APIs quickly for external projects."
+    },
+    {
+      "name": "Node.js",
+      "icon_name": "nodejs-plain-wordmark",
+      "description": "How I develop backend logic for projects built with JS stacks."
+    },
+    {
+      "name": "Firebase",
+      "icon_name": "firebase-plain",
+      "description": "Handles auth, real-time data, and hosting in my fullstack apps."
+    }
+  ],
+
+  "Data Science": [
+    {
+      "name": "Pandas",
+      "icon_name": "pandas-plain",
+      "description": "My toolkit for wrangling and exploring messy data frames."
+    },
+    {
+      "name": "NumPy",
+      "icon_name": "numpy-plain",
+      "description": "How I do efficient numerical ops and matrix math."
+    },
+    {
+      "name": "Matplotlib",
+      "icon_name": "matplotlib-plain",
+      "description": "What I use to visualize trends, comparisons, and model results."
+    },
+    {
+      "name": "scikit-learn",
+      "icon_name": "scikitlearn-plain",
+      "description": "The tool I train and evaluate my simpler models with."
+    }
+  ],
+
+  "Design": [
+    {
+      "name": "Figma",
+      "icon_name": "figma-plain",
+      "description": "My premier tool for prototyping and refining UI flows collaboratively."
+    },
+    {
+      "name": "Canva",
+      "icon_name": "canva-original",
+      "description": "Has everything I need for creating content and quick mockups."
+    }
+  ]
+}

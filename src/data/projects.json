@@ -1,0 +1,37 @@
+[
+  {
+    "title": "Image Recognition for Medicine Package Quality Control",
+    "description": "Researched effectiveness of image preprocessing and machine learning techniques to classify damaged medicine packaging.",
+    "link": "https://nhsjs.com/2024/improving-medicine-package-product-quality-control-using-image-recognition-machine-learning/",
+    "tools": ["Python", "Pandas", "NumPy", "MatPlotLib", "Sklearn", "Tensorflow"],
+    "imgLink": "medicine-package.jpg"
+  },
+  {
+    "title": "Equinet",
+    "description": "Developing a platform to democratize access private investments.",    
+    "link": "https://equinet.it.com/",
+    "tools": ["Javascript", "React.js", "Next.js", "Node.js", "TailwindCSS", "Firebase"],
+    "imgLink": "equinet.jpg"
+  },
+  {
+    "title": "Coefficient of Determination (R<sup>2</sup>) Visualizer",
+    "description": "Helped create an educational visualization to demonstrate the calculation for R<sup>2</sup> in two variable statistics. Currently used to teach 100+ AP Statistics students per year.",
+    "link": "https://iams.skparab1.com/",
+    "tools": ["Javascript", "HTML", "CSS"],
+    "imgLink": "r-squared.jpg"
+  },
+  {
+    "title": "Uno",
+    "description": "Recreated Uno in Java with a GUI and supporting local multiplayer using Java sockets.",
+    "link": "https://github.com/ritam2006/Uno",
+    "tools": ["Java"],
+    "imgLink": "uno.jpg"
+  },
+  {
+    "title": "Retro Game Chrome Extension",
+    "description": "Migrated Breakout and Pong to a browser extension window for simple and convenient user access.",
+    "link": "https://github.com/ritam2006/RetroGameWizard",
+    "tools": ["Javascript", "HTML", "CSS"],
+    "imgLink": "rgw.jpg"
+  }
+]
