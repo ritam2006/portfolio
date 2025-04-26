@@ -57,7 +57,7 @@
 
   const getStarCount = () => {
     const area = window.innerWidth * window.innerHeight;
-    return Math.min(200, Math.max(30, Math.floor(area / 20000)));
+    return Math.min(200, Math.max(30, Math.floor(area / 10000)));
   };
 
   const clearStars = () => {
@@ -126,9 +126,6 @@
     renderer.setSize(window.innerWidth, window.innerHeight);
     el.appendChild(renderer.domElement);
 
-    const ambientLight = new THREE.AmbientLight(0xb998f9, 0.50);
-    scene.add(ambientLight);
-
     addStars();
 
     const animate = () => {
@@ -181,3 +178,20 @@
     </div>
   </transition>
 </template>
+
+<style scoped>
+  .fade-enter-active,
+  .fade-appear-active {
+    @apply transition-opacity duration-[5000ms] ease-out;
+  }
+
+  .fade-enter-from,
+  .fade-appear-from {
+    @apply opacity-0;
+  }
+
+  .fade-enter-to,
+  .fade-enter-to {
+    @apply opacity-100;
+  }
+</style>

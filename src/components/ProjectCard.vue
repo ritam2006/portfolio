@@ -29,7 +29,7 @@
       <p v-html="description" class="text-fg" />
       <div class="flex flex-wrap gap-2">
         <div v-for="(tool, index) in tools" :key="index"
-          class="px-3 py-0.5 rounded-3xl text-sm text-fg hoverable-div"
+          class="px-3 py-0.5 rounded-3xl text-sm text-fg bg-accent-bg"
         >
           {{ tool }}
         </div>
