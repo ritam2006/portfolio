@@ -32,7 +32,7 @@
 </script>
 
 <template>
-  <section class="h-fit relative lg:w-1/2 lg:sticky top-0 px-8 mb-12 space-y-6">
+  <section class="h-fit relative lg:w-1/2 lg:sticky top-0 px-8 space-y-6">
     <div id="about"  class="absolute -top-20" />
     <header class="space-y-1">
       <h1>Ritam Chakraborty</h1>
@@ -66,9 +66,26 @@
         </li>
       </ul>
     </transition>
-    <footer class="text-gray-400">
+    <footer>
       <p>© 2025 Ritam Chakraborty. All rights reserved.</p>
       <p>Made with Vue.js</p>
     </footer>
   </section>
 </template>
+
+<style scoped>
+  .fade-enter-active,
+  .fade-appear-active {
+    @apply transition-opacity duration-[800ms] ease-out;
+  }
+
+  .fade-enter-from,
+  .fade-appear-from {
+    @apply opacity-0;
+  }
+
+  .fade-enter-to,
+  .fade-enter-to {
+    @apply opacity-100;
+  }
+</style>

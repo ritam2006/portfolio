@@ -24,7 +24,7 @@
 
 <template>
   <section class="flex-1 px-8 mb-8 mt-6 overflow-x-hidden">
-    <ul v-if="isInitialLoad" class="text-4xl space-y-10 slide-list">
+    <ul v-if="isInitialLoad" class="text-lg lg:text-4xl space-y-4 lg:space-y-10 slide-list">
       <li
         v-for="(item, index) in navItems"
         :key="item.link"

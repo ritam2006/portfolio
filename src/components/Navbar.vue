@@ -10,9 +10,10 @@
 </script>
 
 <template>
-  <nav class="sticky lg:hidden top-0 z-40 h-16 w-full flex justify-center pointer-events-none border-b-2 border-accent">
-    <ul class="flex items-center gap-4 text-base md:text-lg w-full bg-bg justify-center pointer-events-auto"
-      :class="{'hidden': isInitialLoad}">
+  <nav class="sticky lg:hidden top-0 z-40 h-16 w-full flex justify-center pointer-events-none border-b-2 border-accent"
+    :class="{'hidden': isInitialLoad}"
+  >
+    <ul class="flex items-center gap-4 text-sm sm:text-base md:text-lg w-full bg-bg justify-center pointer-events-auto">
       <li class="hoverable">
         <a href="#about"> About </a>
       </li>
