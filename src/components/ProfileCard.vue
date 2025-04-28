@@ -25,10 +25,6 @@
       icon: 'pi-instagram'
     }
   ];
-
-  const openResume = () => {
-    window.open('/resume.pdf', '_blank');
-  }
 </script>
 
 <template>
