@@ -6,7 +6,7 @@
   import ProfileCard from './components/ProfileCard.vue';
   import Content from './components/Content.vue';
 
-  import { Analytics } from '@vercel/analytics/vue';
+  import { inject } from '@vercel/analytics';
 
   const isInitialLoad = ref<boolean>(true);
   const isDark = ref<boolean>(false);
@@ -17,10 +17,10 @@
   }
 
   toggleTheme();
+  inject();
 </script>
 
 <template>
-  <Analytics />
   <Background />
   <main class="text-fg">
     <Navbar :isInitialLoad="isInitialLoad" :isDark="isDark" @toggle-theme="toggleTheme" />
