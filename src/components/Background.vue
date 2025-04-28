@@ -18,7 +18,7 @@
   }[] = [];
 
   const lastScrollY = ref(0);
-  const rotationSpeedFactor = 0.002;
+  const rotationSpeedFactor = 0.0005;
   const rotationVelocity = ref(0);
   const dampingFactor = 0.95;
   const baseColor1 = new THREE.Color(0x6d28d9);
@@ -51,13 +51,13 @@
   const handleScroll = () => {
     const currentScrollY = window.scrollY;
     const newScrollSpeed = currentScrollY - lastScrollY.value;
-    lastScrollY.value = currentScrollY; // CHANGED: store for next delta
+    lastScrollY.value = currentScrollY;
     rotationVelocity.value += newScrollSpeed * rotationSpeedFactor * 0.1;
   };
 
   const getStarCount = () => {
     const area = window.innerWidth * window.innerHeight;
-    return Math.min(200, Math.max(30, Math.floor(area / 10000)));
+    return Math.min(200, Math.max(30, Math.floor(area / 18000)));
   };
 
   const clearStars = () => {
@@ -173,7 +173,7 @@
 
 <template>
   <transition name="fade" appear>
-    <div class="fixed top-0 left-0 w-full h-full overflow-hidden z-50 pointer-events-none opacity-80">
+    <div class="fixed top-0 left-0 w-full h-full overflow-hidden z-50 pointer-events-none opacity-50">
       <div ref="container" class="w-full h-full"></div>
     </div>
   </transition>
@@ -192,6 +192,6 @@
 
   .fade-enter-to,
   .fade-enter-to {
-    @apply opacity-100;
+    @apply opacity-50;
   }
 </style>
