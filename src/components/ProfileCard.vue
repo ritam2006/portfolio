@@ -48,10 +48,12 @@
       />
     </div>
     <p v-text="aboutMe" class="text-base md:text-lg lg:text-xl" />
-    <button class="flex items-center gap-1 px-3 py-2 rounded text-base md:text-lg lg:text-xl hoverable-div" @click="openResume">
+    <a class="flex w-fit items-center gap-1 px-3 py-2 rounded text-base md:text-lg lg:text-xl hoverable-div"
+      href="https://drive.google.com/file/d/1EPHlzKZh9haDIr2Ej_dNlsI349vTnviF/view?usp=sharing" target="_blank"
+    >
       <p>Resume</p>
       <span class="pi pi-file-pdf" />
-    </button>
+    </a>
     <transition name="fade" appear>
       <ul v-if="!isInitialLoad" class="hidden lg:block text-2xl space-y-4 slide-list">
         <li
