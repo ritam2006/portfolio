@@ -28,8 +28,8 @@
 </script>
 
 <template>
-  <section class="h-fit relative lg:w-1/2 lg:sticky top-0 px-8 space-y-6">
-    <div id="about"  class="absolute -top-20" />
+  <section class="h-fit relative lg:w-1/2 lg:sticky lg:top-4 lg:mt-4 px-8 space-y-6">
+    <div id="about" class="absolute -top-20" />
     <header class="space-y-1">
       <h1>Ritam Chakraborty</h1>
       <h2>Data Science @ UC Berkeley</h2>
