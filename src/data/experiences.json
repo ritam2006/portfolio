@@ -8,12 +8,12 @@
     "imgFile": "siai.jpg"
   },
   {
-    "title": "Technical Consultant",
-    "company": "Piedmont Consulting Group",
+    "title": "Machine Learning Consultant",
+    "company": "Balnce AI",
     "startDate": "Jan 2025",
-    "endDate": "Present",
-    "description": "Consulting for AI startups. Recently finished developing memory layers and entity extraction pipelines for Balnce AI.",
-    "imgFile": "pcg.jpg"
+    "endDate": "May 2025",
+    "description": "Developed synthetic data generation and validation pipelines. Data was used to fine tune LLMs for entity extraction.",
+    "imgFile": "balnceai.jpg"
   },
   {
     "title": "Frontend Developer Intern",
