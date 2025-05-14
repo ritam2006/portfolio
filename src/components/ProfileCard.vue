@@ -25,6 +25,10 @@
       icon: 'pi-instagram'
     }
   ];
+
+  const openResume = () => {
+    window.open('/Ritam_Chakraborty_Resume.pdf', '_blank');
+  }
 </script>
 
 <template>
@@ -44,12 +48,10 @@
       />
     </div>
     <p v-text="aboutMe" class="text-base md:text-lg lg:text-xl" />
-    <a class="flex w-fit items-center gap-1 px-3 py-2 rounded text-base md:text-lg lg:text-xl hoverable-div"
-      href="https://drive.google.com/file/d/1EPHlzKZh9haDIr2Ej_dNlsI349vTnviF/view?usp=sharing" target="_blank"
-    >
+    <button class="flex items-center gap-1 px-3 py-2 rounded text-base md:text-lg lg:text-xl hoverable-div" @click="openResume">
       <p>Resume</p>
       <span class="pi pi-file-pdf" />
-    </a>
+    </button>
     <transition name="fade" appear>
       <ul v-if="!isInitialLoad" class="hidden lg:block text-2xl space-y-4 slide-list">
         <li
