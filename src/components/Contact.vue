@@ -1,11 +1,19 @@
 <script setup lang="ts">
   import { ref } from "vue";
   const WEB3FORMS_ACCESS_KEY = "576f047a-856a-4233-b2bc-c8a9bdf747c8";
+
   const name = ref("")
   const email = ref("")
   const message = ref("")
 
+  const statusMessage = ref("");
+  const isSuccess = ref(false);
+  const isSubmitting = ref(false);
+
   const submitForm = async () => {
+    isSubmitting.value = true;
+    statusMessage.value = "";
+
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
       headers: {
@@ -19,9 +27,19 @@
         message: message.value,
       }),
     });
+
     const result = await response.json();
+    isSubmitting.value = false;
+
     if (result.success) {
-      console.log(result);
+      isSuccess.value = true;
+      statusMessage.value = "Thanks! Your message has been sent.";
+      name.value = "";
+      email.value = "";
+      message.value = "";
+    } else {
+      isSuccess.value = false;
+      statusMessage.value = "Oops! Something went wrong. Please try again.";
     }
   }
 </script>
@@ -56,8 +74,17 @@
         placeholder="Your Message"  
         required 
       />
-      <button type="submit" class="form-element bg-accent-bg hoverable-div border-none">Send Message</button>
+      <button 
+        type="submit" 
+        class="form-element bg-accent-bg hoverable-div border-none"
+        :disabled="isSubmitting"
+      >
+        {{ isSubmitting ? "Sending..." : "Send Message" }}
+      </button>
     </form>
+    <p v-if="statusMessage" :class="isSuccess ? 'text-fg' : 'text-red-600'">
+      {{ statusMessage }}
+    </p>
   </div>
 </template>
 
