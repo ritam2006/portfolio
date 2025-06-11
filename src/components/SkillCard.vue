@@ -1,10 +1,10 @@
 <script setup lang="ts">
-  import { ref } from 'vue';
+  import { ref, computed } from 'vue';
 
-  defineProps({
+  const props = defineProps({
     name: String,
     icon_name: String,
-    description: String
+    rating: Number
   });
 
   const flipped = ref<boolean>(false);
@@ -12,6 +12,18 @@
   const toggleFlip = () => {
     flipped.value = !flipped.value;
   }
+
+  const starIcons = computed(() => {
+    const fullStars = Math.floor(props.rating ?? 0);
+    const hasHalfStar = (props.rating ?? 0) % 1 === 0.5;
+    const emptyStars = 5 - fullStars - (hasHalfStar ? 1 : 0);
+
+    return [
+      ...Array(fullStars).fill('full'),
+      ...(hasHalfStar ? ['half'] : []),
+      ...Array(emptyStars).fill('empty')
+    ];
+  });
 </script>
 
 <template>
@@ -28,11 +40,26 @@
         <i class="text-5xl" :class="`devicon-${icon_name}`" />
         <p class="text-lg">{{ name }}</p>
       </div>
-      <div class="absolute w-full h-full backface-hidden flex items-center 
+      <div class="absolute w-full h-full backface-hidden flex flex-col items-center 
         justify-center p-3 rounded-lg bg-muted transform rotate-y-180 hoverable
         border-2 border-accent hover:border-accent-hover"
       >
-        <p class="text-center text-sm">{{ description }}</p>
+          <p>Experience:</p>
+          <div class="flex gap-1">
+            <template v-for="(star, index) in starIcons" :key="index">
+              <template v-if="star === 'full'">
+                <i class="pi pi-star-fill" />
+              </template>
+              <template v-else-if="star === 'half'">
+                <i class="pi pi-star relative">
+                  <i class="pi pi-star-half-fill absolute left-0" />
+                </i>
+              </template>
+              <template v-else>
+                <i class="pi pi-star" />
+              </template>
+            </template>
+        </div>
       </div>
     </div>
   </button>

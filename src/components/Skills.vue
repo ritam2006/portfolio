@@ -15,13 +15,13 @@
   >
     <div :key="category" class="space-y-2">
       <h2>{{ category }}</h2>
-      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 3xl:grid-cols-5 gap-4">
+      <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-2 xl:grid-cols-4 gap-4">
         <SkillCard
           v-for="skill in skills"
           :key="skill.name"
           :name="skill.name"
           :icon_name="skill.icon_name"
-          :description="skill.description"
+          :rating="skill.rating"
         />
       </div>
     </div>

@@ -45,11 +45,11 @@
 </script>
 <template>
   <div class="flex flex-col gap-4">
-    <a href= "mailto:ritam.chakraborty@gmail.com" class="hoverable flex items-center">
+    <a href= "mailto:ritam.chakraborty@gmail.com" class="hoverable flex gap-0.5 w-fit items-center text-xl">
       <i class="pi pi-envelope"></i>&nbsp;
       <p>ritam.chakraborty@gmail.com</p>
     </a>
-    <div class="h-1 w-full bg-border rounded-lg"></div>
+    <!-- <div class="h-1 w-full bg-border rounded-lg"></div> -->
     <form @submit.prevent="submitForm" class="space-y-2.5">
       <input 
         class="form-element bg-muted" 
@@ -90,6 +90,6 @@
 
 <style scoped>
   .form-element {
-    @apply rounded-lg w-full p-2 border-2 border-border
+    @apply rounded-lg w-full p-2 border-2 border-border focus:border-accent-hover focus:outline-none focus:ring-0
   }
 </style>
