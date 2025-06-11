@@ -1,44 +1,44 @@
 {
   "Languages": [
     {
-      "name": "Python",
-      "icon_name": "python-plain",
-      "description": "My go-to for ML pipelines, quick scripts, and data exploration."
+      "name": "Java",
+      "icon_name": "java-plain",
+      "rating": 5
     },
     {
-      "name": "JavaScript",
-      "icon_name": "javascript-plain",
-      "description": "The core of my interactive web interfaces and fullstack apps."
+      "name": "Python",
+      "icon_name": "python-plain",
+      "rating": 5
     },
     {
       "name": "TypeScript",
       "icon_name": "typescript-plain",
-      "description": "Makes my JavaScript a lot more manageable."
+      "rating": 4
+    },
+    {
+      "name": "JavaScript",
+      "icon_name": "javascript-plain",
+      "rating": 4.5
     },
     {
       "name": "SQL",
       "icon_name": "azuresqldatabase-plain",
-      "description": "How I communicate with and extract data from relational databases."
+      "rating": 4.5
     },
     {
       "name": "HTML",
       "icon_name": "html5-plain",
-      "description": "The structural layer behind every site I've built."
+      "rating": 5
     },
     {
       "name": "CSS",
       "icon_name": "css3-plain",
-      "description": "What I use to style everything from landing pages to dashboards."
+      "rating": 5
     },
     {
       "name": "Dart",
       "icon_name": "dart-plain",
-      "description": "Played with it when I experimented with Flutter apps."
-    },
-    {
-      "name": "Java",
-      "icon_name": "java-plain",
-      "description": "Applied it through CS courses and algorithm practice."
+      "rating": 2.5
     }
   ],
 
@@ -46,45 +46,58 @@
     {
       "name": "React",
       "icon_name": "react-original",
-      "description": "What I used to build responsive UIs using component-driven patterns."
+      "rating": 5
     },
     {
       "name": "Next.js",
       "icon_name": "nextjs-plain",
-      "description": "My favorite for building dynamic, fullstack web apps fast."
+      "rating": 5
     },
     {
       "name": "Vue.js",
       "icon_name": "vuejs-plain",
-      "description": "Currently exploring it to get a feel for different frontend paradigms."
+      "rating": 3.5
     },
     {
       "name": "Tailwind CSS",
       "icon_name": "tailwindcss-original",
-      "description": "Makes CSS less painful 😭."
+      "rating": 5
     }
   ],
 
   "Backend": [
     {
-      "name": "Flask",
-      "icon_name": "flask-original",
-      "description": "Used it to deploy ML models and prototype APIs."
-    },
-    {
-      "name": "FastAPI",
-      "icon_name": "fastapi-plain",
-      "description": "Spun up performant, async APIs quickly for external projects."
+      "name": "Spring",
+      "icon_name": "spring-original",
+      "rating": 5
     },
     {
       "name": "Node.js",
       "icon_name": "nodejs-plain-wordmark",
-      "description": "How I develop backend logic for projects built with JS stacks."
+      "rating": 4
+    },
+    {
+      "name": "Flask",
+      "icon_name": "flask-original",
+      "rating": 3.5
+    },
+    {
+      "name": "FastAPI",
+      "icon_name": "fastapi-plain",
+      "rating": 3
+    }
+  ],
+
+  "Databases": [
+    {
+      "name": "PostgreSQL",
+      "icon_name": "postgresql-plain",
+      "rating": 5
     },
     {
       "name": "Firebase",
       "icon_name": "firebase-plain",
-      "description": "Handles auth, real-time data, and hosting in my fullstack apps."
+      "rating": 5
     }
   ],
 
@@ -92,22 +105,22 @@
     {
       "name": "Pandas",
       "icon_name": "pandas-plain",
-      "description": "My toolkit for wrangling and exploring messy data frames."
+      "rating": 5
     },
     {
       "name": "NumPy",
       "icon_name": "numpy-plain",
-      "description": "How I do efficient numerical ops and matrix math."
+      "rating": 5
     },
     {
       "name": "Matplotlib",
       "icon_name": "matplotlib-plain",
-      "description": "What I use to visualize trends, comparisons, and model results."
+      "rating": 5
     },
     {
       "name": "scikit-learn",
       "icon_name": "scikitlearn-plain",
-      "description": "The tool I train and evaluate my simpler models with."
+      "rating": 5
     }
   ],
 
@@ -115,12 +128,12 @@
     {
       "name": "Figma",
       "icon_name": "figma-plain",
-      "description": "My premier tool for prototyping and refining UI flows collaboratively."
+      "rating": 4
     },
     {
       "name": "Canva",
       "icon_name": "canva-original",
-      "description": "Has everything I need for creating content and quick mockups."
+      "rating": 3
     }
   ]
 }

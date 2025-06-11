@@ -4,7 +4,7 @@
     "company": "SomeIdea AI",
     "startDate": "Mar 2025",
     "endDate": "Present",
-    "description": "Currently working on a tool to streamline the process of writing financial reports. Comitted to making financial reports easier to understand for all.",
+    "description": "Currently working on building agentic workflows to streamline the process of writing equity research reports and understanding financial documents. Building user interfaces and managing database systems.",
     "imgFile": "siai.jpg"
   },
   {
@@ -12,7 +12,7 @@
     "company": "Balnce AI",
     "startDate": "Jan 2025",
     "endDate": "May 2025",
-    "description": "Developed synthetic data generation and validation pipelines. Data was used to fine tune LLMs for entity extraction.",
+    "description": "Developed synthetic data generation and validation pipelines. Used generated data to fine tune a Large Language Model for entity extraction. Automated processes for model selection and hyperparameter tuning.",
     "imgFile": "balnceai.jpg"
   },
   {
@@ -20,7 +20,7 @@
     "company": "UpUnikSelf",
     "startDate": "Jan 2025",
     "endDate": "Mar 2025",
-    "description": "Created interactive components and layouts using React.js with Next.js. Optimized page loading speed and API calls through dynamic rendering and efficient data querying.",
+    "description": "Created interactive components and layouts using React.js with Next.js. Optimized data latency and API calling times through dynamic rendering and efficient data querying. Designed layouts for 30+ pages.",
     "imgFile": "upunikself.jpg"
   },
   {
@@ -28,7 +28,7 @@
     "company": "Space Enterprise at Berkeley",
     "startDate": "Sep 2024",
     "endDate": "Dec 2024",
-    "description": "Enhanced wind speed sampling technique for rocket launch simulations. Helped develop a Data Analysis GUI for real-time data analysis during launches.",
+    "description": "Enhanced wind speed sampling technique for rocket simulations. Helped develop a Data Analysis GUI for real-time data analysis during launches.",
     "imgFile": "seb.jpg"
   }
 ]
