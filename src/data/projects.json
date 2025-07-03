@@ -3,14 +3,21 @@
     "title": "Portfolio Management Risk Estimator",
     "description": "Built a full-stack application that simulates portfolio performance and assesses risk exposure. Tracks and updates market data for the top 50 companies in the S&P 500.",
     "link": "https://pmr.ritamchakraborty.com/",
-    "tools": ["Java", "Spring", "SQL", "PostgreSQL", "Typescript", "React.js", "Next.js"],
+    "tools": ["Java", "Spring", "SQL", "PostgreSQL", "Polygon API", "Typescript", "React.js", "Next.js", "Tailwind CSS", "Docker"],
     "imgLink": "pmr.jpg"
+  },
+  {
+    "title": "AI-Powered Lease Negotiation Platform",
+    "description": "Designed and built reLease, a collaborative lease negotiation tool powered by generative AI, to make housing contracts more transparent and tenant-friendly. Built during UC Berkeley AI Hackathon 2025.",
+    "link": "https://ai-hackathon-2025-pi.vercel.app/",
+    "tools": ["Typescript", "Node.js", "Gemini API", "Letta API", "Supabase", "React.js", "Next.js", "Tailwind CSS"],
+    "imgLink": "reLease.jpg"
   },
   {
     "title": "Image Recognition for Medicine Package Quality Control",
     "description": "Researched effectiveness of various image preprocessing and machine learning techniques to classify damaged medicine packaging.",
     "link": "https://nhsjs.com/2024/improving-medicine-package-product-quality-control-using-image-recognition-machine-learning/",
-    "tools": ["Python", "Pandas", "NumPy", "Tensorflow"],
+    "tools": ["Python", "Pandas", "NumPy", "Tensorflow", "Scikit-learn", "OpenCV"],
     "imgLink": "medicine-package.jpg"
   },
   {

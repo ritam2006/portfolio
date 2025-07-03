@@ -1,6 +1,6 @@
 <script setup lang="ts">
   import navItems from './navItems';
-  import aboutMe from '../data/aboutMe.txt?raw';
+  import { version } from '../version';
 
   defineProps({
     isInitialLoad: Boolean,
@@ -47,13 +47,16 @@
         :class="['pi hoverable', item.icon]"
       />
     </div>
-    <p v-text="aboutMe" class="text-base md:text-lg lg:text-xl" />
+    <!-- <p v-text="aboutMe" class="text-base md:text-lg lg:text-xl" /> -->
+    <p class="text-base md:text-lg lg:text-xl">
+      I'm a full-stack engineer who creates elegant solutions to complex problems. From fine-tuning LLMs for AI agents to building real-time collaborative platforms, I specialize in bridging software and machine learning with intuitive and powerful user experiences.
+    </p>
     <button class="flex items-center gap-1 px-3 py-2 rounded text-base md:text-lg lg:text-xl hoverable-div" @click="openResume">
       <p>Resume</p>
       <span class="pi pi-file-pdf" />
     </button>
     <transition name="fade" appear>
-      <ul v-if="!isInitialLoad" class="hidden lg:block text-2xl space-y-4 slide-list">
+      <ul v-if="!isInitialLoad" class="hidden lg:grid grid-cols-2 gap-2 text-2xl slide-list">
         <li
           v-for="(item) in navItems"
           :key="item.link"
@@ -67,7 +70,7 @@
       </ul>
     </transition>
     <footer>
-      <p>© 2025 Ritam Chakraborty. All rights reserved.</p>
+      <p>© 2025 Ritam Chakraborty • v{{ version }}</p>
       <p>Made with Vue.js</p>
     </footer>
   </section>

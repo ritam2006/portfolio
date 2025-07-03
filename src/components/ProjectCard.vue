@@ -17,7 +17,7 @@
         <img 
           :src="`/projects/${imgFile}`"
           :alt="imgFile"
-          class="h-16 md:h-20 aspect-square"
+          class="h-16 md:h-20 aspect-square rounded-lg"
         />
         <header>
           <h2>

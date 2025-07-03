@@ -132,8 +132,6 @@
       animationFrameId = requestAnimationFrame(animate);
 
       rotationVelocity.value *= dampingFactor;
-      if (Math.abs(rotationVelocity.value) < 0.001) rotationVelocity.value = 0;
-
       rotationAngle += rotationVelocity.value;
 
       const time = Date.now() * 0.001;

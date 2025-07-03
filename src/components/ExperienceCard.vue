@@ -15,7 +15,7 @@
     <img
       :src="`/experiences/${imgFile}`"
       :alt="imgFile"
-      class="h-16 md:h-20 aspect-square object-contain"
+      class="h-16 md:h-20 aspect-square rounded-lg"
     />
     <header class="space-y-1">
       <h2>{{ title }}</h2>

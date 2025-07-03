@@ -98,6 +98,11 @@
       "name": "Firebase",
       "icon_name": "firebase-plain",
       "rating": 5
+    },
+    {
+      "name": "Supabase",
+      "icon_name": "supabase-plain",
+      "rating": 3.5
     }
   ],
 

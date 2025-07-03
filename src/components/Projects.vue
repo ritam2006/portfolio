@@ -19,5 +19,9 @@
         :imgFile="project.imgLink"
       />
     </div>
+    <!-- <a href="" class="hoverable text-xl flex items-center gap-2">
+      <p>View All Proejcts</p>
+      <i class="pi pi-arrow-right" />
+    </a> -->
   </section>
 </template>
