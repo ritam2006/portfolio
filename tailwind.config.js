@@ -14,6 +14,7 @@ export default {
         'accent-hover': 'var(--accent-hover)',
         'accent-bg': 'var(--accent-bg)',
         'accent-bg-hover': 'var(--accent-bg-hover)',
+        'accent-pink': 'var(--accent-pink)',
         muted: 'var(--muted)',
         border: 'var(--border)',
       },      
@@ -21,4 +22,3 @@ export default {
   },
   plugins: [],
 }
-

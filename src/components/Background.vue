@@ -171,7 +171,7 @@
 
 <template>
   <transition name="fade" appear>
-    <div class="fixed top-0 left-0 w-full h-full overflow-hidden z-50 pointer-events-none opacity-50">
+    <div class="fixed top-0 left-0 w-full h-full overflow-hidden -z-50 pointer-events-none opacity-50">
       <div ref="container" class="w-full h-full"></div>
     </div>
   </transition>

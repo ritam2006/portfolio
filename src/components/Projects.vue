@@ -5,6 +5,10 @@
 
 <template>
   <section class="space-y-4">
+    <!-- <a href="" class="hoverable text-xl flex items-center gap-2">
+      <p>View All Projects</p>
+      <i class="pi pi-arrow-right" />
+    </a> -->
     <div
       v-for="(project) in projects"
       :key="project.title"
@@ -19,9 +23,5 @@
         :imgFile="project.imgLink"
       />
     </div>
-    <!-- <a href="" class="hoverable text-xl flex items-center gap-2">
-      <p>View All Proejcts</p>
-      <i class="pi pi-arrow-right" />
-    </a> -->
   </section>
 </template>

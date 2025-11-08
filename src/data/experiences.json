@@ -1,34 +1,56 @@
 [
   {
-    "title": "Software Engineer Intern",
     "company": "SomeIdea AI",
-    "startDate": "Mar 2025",
-    "endDate": "Present",
-    "description": "Currently working on building agentic workflows to streamline the process of writing equity research reports and understanding financial documents. Building user interfaces and managing database systems.",
-    "imgFile": "siai.jpg"
+    "imgFile": "siai.jpg",
+    "roles": [
+      {
+        "title": "Software Engineering Intern",
+        "startDate": "Mar 2025",
+        "endDate": "Aug 2025",
+        "description": "Worked on building agentic workflows to streamline the process of writing equity research reports and understanding financial documents. Built user interfaces and managing database systems."
+      },
+      {
+        "title": "Founding Engineer",
+        "startDate": "Aug 2025",
+        "endDate": "Present",
+        "description": "More info coming soon..."
+      }
+    ]
   },
   {
-    "title": "Machine Learning Consultant",
+    "company": "Berkeleytime",
+    "imgFile": "berkeleytime.jpg",
+    "roles": [
+      {
+        "title": "Backend Developer",
+        "startDate": "Sep 2025",
+        "endDate": "Present",
+        "description": "Building features for the Berkeleytime web application, Berkeley's premier course planning website serving over 10,000 students. Learned how to use GraphQL for creating APIs and TypeScript for backend development."
+      }
+    ]
+  },
+  {
     "company": "Balnce AI",
-    "startDate": "Jan 2025",
-    "endDate": "May 2025",
-    "description": "Developed synthetic data generation and validation pipelines. Used generated data to fine tune a Large Language Model for entity extraction. Automated processes for model selection and hyperparameter tuning.",
-    "imgFile": "balnceai.jpg"
+    "imgFile": "balnceai.jpg",
+    "roles": [
+      {
+        "title": "Machine Learning Consultant",
+        "startDate": "Jan 2025",
+        "endDate": "May 2025",
+        "description": "Developed synthetic data generation and validation pipelines. Used generated data to fine tune a Large Language Model for entity extraction. Automated processes for model selection and hyperparameter tuning."
+      }
+    ]
   },
   {
-    "title": "Frontend Developer Intern",
     "company": "UpUnikSelf",
-    "startDate": "Jan 2025",
-    "endDate": "Mar 2025",
-    "description": "Created interactive components and layouts using React.js with Next.js. Optimized data latency and API calling times through dynamic rendering and efficient data querying. Designed layouts for 30+ pages.",
-    "imgFile": "upunikself.jpg"
-  },
-  {
-    "title": "Simulations Engineer",
-    "company": "Space Enterprise at Berkeley",
-    "startDate": "Sep 2024",
-    "endDate": "Dec 2024",
-    "description": "Enhanced wind speed sampling technique for rocket simulations. Helped develop a Data Analysis GUI for real-time data analysis during launches.",
-    "imgFile": "seb.jpg"
+    "imgFile": "upunikself.jpg",
+    "roles": [
+      {
+        "title": "Frontend Developer Intern",
+        "startDate": "Jan 2025",
+        "endDate": "Mar 2025",
+        "description": "Created interactive components and layouts using React.js with Next.js. Optimized data latency and API calling times through dynamic rendering and efficient data querying. Designed layouts for 30+ pages."
+      }
+    ]
   }
 ]

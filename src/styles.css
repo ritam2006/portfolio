@@ -13,6 +13,7 @@
   --accent-hover: #6d28d9;
   --accent-bg: #b998f9;
   --accent-bg-hover: #cbb9ff;
+  --accent-pink: #ff92c2;
   --muted: #ececf0;
   --border: #dcdce4;
 }
@@ -24,19 +25,24 @@
   --accent-hover: #cbb9ff;
   --accent-bg: #7c3aed;
   --accent-bg-hover: #6d28d9;
+  --accent-pink: #f45c7a;
   --muted: #252030;
   --border: #3e3b4f;
 }
 
-body {
+/* body {
   background-color: var(--bg);
-}
+} */
 
 html {
   scroll-behavior: smooth;
 }
 
 @layer base {
+  body {
+    @apply bg-bg;
+  }
+
   h1 {
     @apply text-4xl xl:text-5xl 2xl:text-6xl font-bold
   }
@@ -51,6 +57,10 @@ html {
 }
   
 @layer components {
+  .card-bg {
+    @apply bg-gradient-to-bl from-bg via-muted to-bg;
+  }
+
   .hoverable {
     @apply cursor-pointer text-accent transition-colors duration-200 ease-in-out hover:text-accent-hover;
   }

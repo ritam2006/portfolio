@@ -34,14 +34,14 @@
       :class="{ 'rotate-y-180': flipped }"
     >
       <div class="absolute w-full h-full backface-hidden flex flex-col items-center 
-        justify-center gap-2 p-3 rounded-lg bg-muted hoverable border-2 border-accent
+        justify-center gap-2 p-3 rounded-lg card-bg hoverable border-2 border-accent
         hover:border-accent-hover"
       >
         <i class="text-5xl" :class="`devicon-${icon_name}`" />
         <p class="text-lg">{{ name }}</p>
       </div>
       <div class="absolute w-full h-full backface-hidden flex flex-col items-center 
-        justify-center p-3 rounded-lg bg-muted transform rotate-y-180 hoverable
+        justify-center p-3 rounded-lg card-bg transform rotate-y-180 hoverable
         border-2 border-accent hover:border-accent-hover"
       >
           <p>Experience:</p>

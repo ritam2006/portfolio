@@ -44,7 +44,7 @@
 
   "Frontend": [
     {
-      "name": "React",
+      "name": "React.js",
       "icon_name": "react-original",
       "rating": 5
     },
@@ -82,8 +82,8 @@
       "rating": 3.5
     },
     {
-      "name": "FastAPI",
-      "icon_name": "fastapi-plain",
+      "name": "GraphQL",
+      "icon_name": "graphql-plain",
       "rating": 3
     }
   ],
@@ -103,6 +103,11 @@
       "name": "Supabase",
       "icon_name": "supabase-plain",
       "rating": 3.5
+    },
+    {
+      "name": "MongoDB",
+      "icon_name": "mongodb-plain",
+      "rating": 3
     }
   ],
 
@@ -126,6 +131,29 @@
       "name": "scikit-learn",
       "icon_name": "scikitlearn-plain",
       "rating": 5
+    }
+  ],
+
+  "Other Tools": [
+    {
+      "name": "Docker",
+      "icon_name": "docker-plain",
+      "rating": 5
+    },
+    {
+      "name": "Git",
+      "icon_name": "git-plain",
+      "rating": 5
+    },
+    {
+      "name": "Linux",
+      "icon_name": "linux-plain",
+      "rating": 4.5
+    },
+    {
+      "name": "Jupyter",
+      "icon_name": "jupyter-plain",
+      "rating": 4.5
     }
   ],
 
